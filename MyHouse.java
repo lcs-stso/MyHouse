@@ -3,7 +3,7 @@
  * Create an image of a house.
  *
  * @author S.Tso
- * @version January 11,2019
+ * @version January 14, 2019
  */
 public class MyHouse
 {
