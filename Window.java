@@ -15,8 +15,11 @@ public class Window
    
     /**
      * Constructor for objects of class window
+     * 
+     * @param  x  horizontal position for the window
+     * @param  y  vertical position for the window
      */
-    public Window()
+    public Window(int x, int y)
     {
         // initialise instance variables
         window = new Square();
@@ -27,15 +30,17 @@ public class Window
         
         
         // Draw window
-        drawWindow();
-        
-        
+        drawWindow(x, y);
+
     }
 
     /**
      * Draw the house 
+     * 
+     * @param  x  horizontal position for the window
+     * @param  y  vertical position for the window
      */ 
-    public void drawWindow()
+    public void drawWindow(int x, int y)
     {
         //Set up the window 
         window.changeSize(45);
@@ -43,26 +48,41 @@ public class Window
         window.changeColor("white");
         window.moveVertical(155);
         window.moveHorizontal(100);
+        // adjust position based on parameters
+        window.moveHorizontal(x);
+        window.moveVertical(y);
+        
         window1.makeVisible();
         window1.changeColor("blue");
         window1.changeSize(15);
         window1.moveVertical(160);
         window1.moveHorizontal(107);
+        window.moveHorizontal(x);
+        window.moveVertical(y);
+        
         window2.makeVisible();
         window2.changeColor("magenta");
         window2.changeSize(15);
         window2.moveVertical(160);
         window2.moveHorizontal(123);
+        window.moveHorizontal(x);
+        window.moveVertical(y);
+        
         window3.makeVisible();
         window3.changeColor("black");
         window3.changeSize(15);
         window3.moveVertical(177);
         window3.moveHorizontal(107);
+        window.moveHorizontal(x);
+        window.moveVertical(y);
+        
         window4.makeVisible();
         window4.changeColor("blue");
         window4.changeSize(15);
         window4.moveVertical(177);
         window4.moveHorizontal(123);
+        window.moveHorizontal(x);
+        window.moveVertical(y);
         
     }
 }

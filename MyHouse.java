@@ -14,7 +14,10 @@ public class MyHouse
     private Triangle roof;
     private Square door;
     private Window window1;
-   
+    private Window window2;
+    private Window window3;
+    private Tree pineTree; 
+    
     /**
      * Constructor for objects of class Myhouse
      */
@@ -24,10 +27,15 @@ public class MyHouse
         base = new Square();
         roof = new Triangle();
         door = new Square();
+         
         
         drawHouse();
        
-        window1 = new Window(); 
+        window1 = new Window(0, 0);
+        window2 = new Window(-50, 0);
+      
+        //Create the pinetree
+        pineTree = new Tree(0,0);
         
     }
 
@@ -59,7 +67,7 @@ public class MyHouse
         door.changeSize(40);
         door.moveVertical(210);
         door.moveHorizontal(60);
-        
+     
         
         
         
