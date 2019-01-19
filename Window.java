@@ -48,7 +48,6 @@ public class Window
         window.changeColor("white");
         window.moveVertical(155);
         window.moveHorizontal(100);
-        // adjust position based on parameters
         window.moveHorizontal(x);
         window.moveVertical(y);
         

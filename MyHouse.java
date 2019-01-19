@@ -17,7 +17,7 @@ public class MyHouse
     private Window window2;
     private Window window3;
     private Tree pineTree; 
-    
+    private Tree pineTree1; 
     /**
      * Constructor for objects of class Myhouse
      */
@@ -31,12 +31,14 @@ public class MyHouse
         
         drawHouse();
        
-        window1 = new Window(0, 0);
-        window2 = new Window(-50, 0);
-      
+        window1 = new Window(-50, 0);
+        window2 = new Window(-100, 0);
+         
         //Create the pinetree
-        pineTree = new Tree(0,0);
+        pineTree = new Tree(50,0);
         
+        //Create the pinetree 
+        pineTree1 = new Tree(300,0);
     }
 
     /**
@@ -67,7 +69,7 @@ public class MyHouse
         door.changeSize(40);
         door.moveVertical(210);
         door.moveHorizontal(60);
-     
+        
         
         
         
